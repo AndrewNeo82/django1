@@ -17,10 +17,12 @@
         {% else %}
         <td>{{ item.name }}</td>
         {% endif %}
-      </tr>
-      {% empty %}
-      <tr>
-        <td>You have nothing to do</td>
+    <td>
+        <a href="/edit/{{ item.id }}">
+            Edit
+        </a>
+    </td>
+
       </tr>
       {% endfor %}
     </table>
